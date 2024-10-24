@@ -43,9 +43,5 @@ for i, item in enumerate(train_dataset):
 
     epoch_loss += loss.item()
     batches += 1
-
-    if (i + 1) % verbose == 0:
-        logging.info('Training Loss: %.6f' % epoch_loss / batches)
-        logging.info('')
     print(i)
 print("end---")

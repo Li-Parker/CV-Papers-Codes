@@ -13,10 +13,9 @@ from PIL import Image
 
 transforms = transforms.Compose([
     transforms.ToTensor(),
-    transforms.Resize((256,256)),
+    # transforms.Resize((256,256)),
     transforms.Normalize(mean=0.5, std=0.5)
 ])
-
 class CMP_dataset(data.Dataset):
     def __init__(self,imgs_path, annos_path):
         self.imgs_path = imgs_path
@@ -39,10 +38,10 @@ class CMP_dataset(data.Dataset):
 
 
 def get_dataset():
-    train_imgs_path = glob.glob('./data/base/*.jpg')
-    train_annos_path = glob.glob('./data/base/*.png')
-    test_imgs_path = glob.glob('./data/extended/*.jpg')
-    test_annos_path = glob.glob('./data/extended/*.png')
+    train_imgs_path = glob.glob('./data/process/base/*.jpg')
+    train_annos_path = glob.glob('./data/process/base/*.png')
+    test_imgs_path = glob.glob('./data/process/extended/*.jpg')
+    test_annos_path = glob.glob('./data/process/extended/*.png')
 
     train_dataset = CMP_dataset(train_imgs_path, train_annos_path)
     test_dataset = CMP_dataset(test_imgs_path, test_annos_path)
