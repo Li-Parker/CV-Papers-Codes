@@ -226,10 +226,12 @@ if __name__ == "__main__":
     batch_size, num_classes, h, w = 8, 5, 256, 256
 
     x = torch.autograd.Variable(torch.randn(batch_size, 3, h, w))
+    x2 = torch.autograd.Variable(torch.randn(batch_size,3,h//2,w))
     model = FCN32s(num_classes)
     y = model(x)
     assert y.size() == torch.Size([batch_size, num_classes, h, w])
 
+    y = model(x2)
     model = FCN16s(num_classes)
     y = model(x)
     assert y.size() == torch.Size([batch_size, num_classes, h, w])
@@ -241,3 +243,7 @@ if __name__ == "__main__":
     model = FCNs(num_classes)
     y = model(x)
     assert y.size() == torch.Size([batch_size, num_classes, h, w])
+
+    y1 = model(x)
+    y2 = model(x2)
+    print("end----")

@@ -18,7 +18,9 @@
 ```
 python train.py
 ```
-
+```
+Downloading: "https://download.pytorch.org/models/vgg16-397923af.pth" to C:\Users\liyingda/.cache\torch\hub\checkpoints\vgg16-397923af.pth
+```
 ## Testing
 测试集图像: **data/testImages**
 
