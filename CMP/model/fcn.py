@@ -218,7 +218,9 @@ class FCNs(nn.Module):
         y = self.bn5(self.relu5(self.deconv5(y)))
 
         y = self.classifier(y)
-
+        y_shape = y.shape
+        y = torch.argmax(y, dim=1) + torch.tensor(1.0, requires_grad=True)
+        y = y.reshape(y_shape[0], 1, y_shape[2], y_shape[3])
         return y
 
 
