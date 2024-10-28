@@ -203,6 +203,7 @@ class FCNs(nn.Module):
         self.relu5 = nn.ReLU()
 
         self.classifier = nn.Conv2d(32, num_classes, kernel_size=1)
+        self.relu6 = nn.ReLU()
 
     def forward(self, x):
         features = self.features(x)
@@ -218,9 +219,6 @@ class FCNs(nn.Module):
         y = self.bn5(self.relu5(self.deconv5(y)))
 
         y = self.classifier(y)
-        y_shape = y.shape
-        y = torch.argmax(y, dim=1) + torch.tensor(1.0, requires_grad=True)
-        y = y.reshape(y_shape[0], 1, y_shape[2], y_shape[3])
         return y
 
 

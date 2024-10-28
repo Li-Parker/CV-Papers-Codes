@@ -25,15 +25,36 @@ from PIL import Image
 # Define transforms for images and annotations separately
 image_transforms = transforms.Compose([
     transforms.ToTensor(),  # Apply normalization for images
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
 
 # For annotations, just convert to tensor without normalization
 def annotation_transforms(anno_img):
-    new_data = torch.tensor(np.array(anno_img), dtype=torch.float)  # Use long type for integer values
+    class_num = 12
+    new_data = torch.tensor(np.array(anno_img), dtype=torch.int)  # Use long type for integer values
     new_data_shape = new_data.shape
     new_data = new_data.reshape(1,new_data_shape[0],new_data_shape[1])
-    return new_data
-
+    new_tensor = torch.zeros((class_num, new_data_shape[0], new_data_shape[1]), dtype=torch.float32)
+    # 将原始 tensor 中的值映射到新 tensor
+    for i in range(new_data_shape[0]):
+        for j in range(new_data_shape[1]):
+            pixel_value = new_data[0, i, j].item()  # 获取像素值
+            new_tensor[pixel_value - 1, i, j] = 1.0  # 将对应索引位置设为 1
+    return new_tensor
+# def annotation_transforms(anno_img):
+#     class_num = 12
+#     new_data = torch.tensor(np.array(anno_img), dtype=torch.int64)  # 使用 int64 类型
+#     new_data_shape = new_data.shape
+#     new_data = new_data.unsqueeze(0)  # 在第一个维度添加维度，使形状为 (1, H, W)
+#
+#     # 创建新 tensor
+#     new_tensor = torch.zeros((class_num, new_data_shape[0], new_data_shape[1]), dtype=torch.float32)
+#
+#     # 使用向量化操作，将像素值映射到新 tensor
+#     # new_data[0] 是一个 (H, W) 的 tensor，使用 .long() 转换为长整型
+#     new_tensor[new_data[0] - 1] = 1.0
+#
+#     return new_tensor
 
 class CMP_dataset(data.Dataset):
     def __init__(self, imgs_path, annos_path):
@@ -46,8 +67,8 @@ class CMP_dataset(data.Dataset):
         pil_img = image_transforms(pil_img)  # Apply image transforms
 
         anno_path = self.annos_path[index]
-        anno_img = Image.open(anno_path)
-        pil_anno = annotation_transforms(anno_img)  # Apply annotation transforms
+        anno_img = np.load(anno_path)['new_tensor']
+        pil_anno = torch.from_numpy(anno_img)  # Apply annotation transforms
 
         return pil_img, pil_anno
 
@@ -58,9 +79,9 @@ class CMP_dataset(data.Dataset):
 
 def get_dataset():
     train_imgs_path = glob.glob('./data/process_v2/base/*.jpg')
-    train_annos_path = glob.glob('./data/process_v2/base/*.png')
+    train_annos_path = glob.glob('./data/process_v2/base/*.npz')
     test_imgs_path = glob.glob('./data/process_v2/extended/*.jpg')
-    test_annos_path = glob.glob('./data/process_v2/extended/*.png')
+    test_annos_path = glob.glob('./data/process_v2/extended/*.npz')
 
     train_dataset = CMP_dataset(train_imgs_path, train_annos_path)
     test_dataset = CMP_dataset(test_imgs_path, test_annos_path)
