@@ -1,0 +1,117 @@
+D:\App-Download\Anaconda\Anaconda\envs\trafficgen\python.exe D:\Desktop\linyanwei\CV-Papers-Codes\CMP\train.py
+D:\App-Download\Anaconda\Anaconda\envs\trafficgen\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\App-Download\Anaconda\Anaconda\envs\trafficgen\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1:   1%|          | 1/154 [00:44<1:53:20, 44.45s/batch, loss=0.734]0.7339372634887695
+Model saved to ./saved/best_model_epoch1_num1_loss0.7339.pth with loss: 0.7339
+Epoch 1:  14%|█▎        | 21/154 [12:13<1:15:47, 34.19s/batch, loss=0.658]0.6516728032202947
+Model saved to ./saved/best_model_epoch1_num21_loss0.6517.pth with loss: 0.6517
+Epoch 1:  27%|██▋       | 41/154 [23:32<1:04:13, 34.10s/batch, loss=0.626]0.313290107540968
+Model saved to ./saved/best_model_epoch1_num41_loss0.3133.pth with loss: 0.3133
+Epoch 1:  40%|███▉      | 61/154 [34:49<52:34, 33.92s/batch, loss=0.582]0.19799481161305163
+Model saved to ./saved/best_model_epoch1_num61_loss0.1980.pth with loss: 0.1980
+Epoch 1:  53%|█████▎    | 81/154 [46:09<41:35, 34.19s/batch, loss=0.516]0.13723389160485916
+Model saved to ./saved/best_model_epoch1_num81_loss0.1372.pth with loss: 0.1372
+Epoch 1:  66%|██████▌   | 101/154 [57:30<30:05, 34.06s/batch, loss=0.447]0.09799307201168325
+Model saved to ./saved/best_model_epoch1_num101_loss0.0980.pth with loss: 0.0980
+Epoch 1:  79%|███████▊  | 121/154 [1:08:49<18:48, 34.20s/batch, loss=0.402]0.07033260868600577
+Model saved to ./saved/best_model_epoch1_num121_loss0.0703.pth with loss: 0.0703
+Epoch 1:  92%|█████████▏| 141/154 [1:20:08<07:22, 34.02s/batch, loss=0.329]0.05080472112547421
+Model saved to ./saved/best_model_epoch1_num141_loss0.0508.pth with loss: 0.0508
+Epoch 1: 100%|██████████| 154/154 [1:27:12<00:00, 33.98s/batch, loss=0.298]
+Epoch 2:   1%|          | 1/154 [00:48<2:03:10, 48.31s/batch, loss=0.305]0.3050259053707123
+Epoch 2:  14%|█▎        | 21/154 [16:32<1:44:28, 47.13s/batch, loss=0.239]0.25549393040793283
+Epoch 2:  27%|██▋       | 41/154 [32:37<1:28:26, 46.96s/batch, loss=0.213]0.11405095748785066
+Epoch 2:  40%|███▉      | 61/154 [48:57<1:17:39, 50.10s/batch, loss=0.192]0.06874949472849487
+Epoch 2:  53%|█████▎    | 81/154 [1:05:16<58:18, 47.92s/batch, loss=0.18] 0.04671049945884281
+Model saved to ./saved/best_model_epoch2_num81_loss0.0467.pth with loss: 0.0467
+Epoch 2:  66%|██████▌   | 101/154 [1:22:00<43:49, 49.62s/batch, loss=0.174]0.03528347670441807
+Model saved to ./saved/best_model_epoch2_num101_loss0.0353.pth with loss: 0.0353
+Epoch 2:  79%|███████▊  | 121/154 [1:38:21<27:12, 49.47s/batch, loss=0.149]0.02762751071906287
+Model saved to ./saved/best_model_epoch2_num121_loss0.0276.pth with loss: 0.0276
+Epoch 2:  92%|█████████▏| 141/154 [1:54:19<10:13, 47.20s/batch, loss=0.159]0.022207525816369564
+Model saved to ./saved/best_model_epoch2_num141_loss0.0222.pth with loss: 0.0222
+Epoch 2: 100%|██████████| 154/154 [2:04:44<00:00, 48.60s/batch, loss=0.148]
+Epoch 3:   1%|          | 1/154 [00:46<1:58:38, 46.53s/batch, loss=0.168]0.1680089235305786
+Epoch 3:  14%|█▎        | 21/154 [16:09<1:43:31, 46.70s/batch, loss=0.148]0.1369661326919283
+Epoch 3:  27%|██▋       | 41/154 [31:39<1:26:05, 45.72s/batch, loss=0.159]0.0697383702528186
+Epoch 3:  40%|███▉      | 61/154 [47:50<1:16:48, 49.55s/batch, loss=0.145]0.04617336392402649
+Epoch 3:  53%|█████▎    | 81/154 [1:03:27<56:46, 46.66s/batch, loss=0.119]0.03399482424612398
+Epoch 3:  66%|██████▌   | 101/154 [1:19:06<40:38, 46.02s/batch, loss=0.118]0.02647071383377113
+Epoch 3:  79%|███████▊  | 121/154 [1:34:53<26:03, 47.36s/batch, loss=0.125]0.021969460997699707
+Model saved to ./saved/best_model_epoch3_num121_loss0.0220.pth with loss: 0.0220
+Epoch 3:  92%|█████████▏| 141/154 [1:50:56<10:25, 48.15s/batch, loss=0.13] 0.01799850546299143
+Model saved to ./saved/best_model_epoch3_num141_loss0.0180.pth with loss: 0.0180
+Epoch 3: 100%|██████████| 154/154 [2:00:41<00:00, 47.02s/batch, loss=0.109]
+Epoch 4:   1%|          | 1/154 [00:37<1:35:06, 37.30s/batch, loss=0.123]0.12264476716518402
+Epoch 4:  14%|█▎        | 21/154 [11:38<1:07:54, 30.63s/batch, loss=0.113]0.1130731755069324
+Epoch 4:  27%|██▋       | 41/154 [21:41<51:35, 27.39s/batch, loss=0.126]0.05926984912011682
+Epoch 4:  40%|███▉      | 61/154 [32:15<54:10, 34.95s/batch, loss=0.119]0.03858972194253421
+Epoch 4:  53%|█████▎    | 81/154 [42:26<37:24, 30.74s/batch, loss=0.128]0.029441816295370644
+Epoch 4:  66%|██████▌   | 101/154 [52:24<23:41, 26.82s/batch, loss=0.123]0.023102532814044764
+Epoch 4:  79%|███████▊  | 121/154 [1:02:42<18:40, 33.95s/batch, loss=0.103] 0.017965730556771774
+Model saved to ./saved/best_model_epoch4_num121_loss0.0180.pth with loss: 0.0180
+Epoch 4:  92%|█████████▏| 141/154 [1:12:33<06:27, 29.83s/batch, loss=0.127]0.016048923029121778
+Model saved to ./saved/best_model_epoch4_num141_loss0.0160.pth with loss: 0.0160
+Epoch 4: 100%|██████████| 154/154 [1:18:48<00:00, 30.70s/batch, loss=0.0986]
+Epoch 5:   1%|          | 1/154 [00:42<1:49:16, 42.85s/batch, loss=0.114]0.11432969570159912
+Epoch 5:  14%|█▎        | 21/154 [16:11<1:42:46, 46.37s/batch, loss=0.111] 0.09793123212598619
+Epoch 5:  27%|██▋       | 41/154 [31:53<1:26:48, 46.09s/batch, loss=0.109]0.05178089458041075
+Epoch 5:  40%|███▉      | 61/154 [47:45<1:15:41, 48.83s/batch, loss=0.0995]0.03345615477835546
+Epoch 5:  53%|█████▎    | 81/154 [1:03:19<56:15, 46.25s/batch, loss=0.102]0.025333582159177758
+Epoch 5:  66%|██████▌   | 101/154 [1:18:57<40:35, 45.95s/batch, loss=0.092]0.019512673268223753
+Epoch 5:  79%|███████▊  | 121/154 [1:34:50<26:48, 48.74s/batch, loss=0.105]0.01673440967709565
+Epoch 5:  92%|█████████▏| 141/154 [1:50:28<10:00, 46.16s/batch, loss=0.101]0.014366240260448861
+Model saved to ./saved/best_model_epoch5_num141_loss0.0144.pth with loss: 0.0144
+Epoch 5: 100%|██████████| 154/154 [2:00:34<00:00, 46.98s/batch, loss=0.102]
+Epoch 6:   1%|          | 1/154 [00:25<1:06:11, 25.96s/batch, loss=0.095]0.09495728462934494
+Epoch 6:  14%|█▎        | 21/154 [12:56<1:24:32, 38.14s/batch, loss=0.085] 0.08699388376304082
+Epoch 6:  27%|██▋       | 41/154 [25:38<1:11:41, 38.07s/batch, loss=0.0904]0.04436606205091244
+Epoch 6:  40%|███▉      | 61/154 [38:23<59:01, 38.08s/batch, loss=0.0961]0.029297068226532857
+Epoch 6:  53%|█████▎    | 81/154 [51:06<46:18, 38.07s/batch, loss=0.0853]0.022596752294051795
+Epoch 6:  66%|██████▌   | 101/154 [1:03:51<33:43, 38.18s/batch, loss=0.0754]0.017133765365227614
+Epoch 6:  79%|███████▊  | 121/154 [1:16:34<21:03, 38.30s/batch, loss=0.0922]0.014029108665206215
+Model saved to ./saved/best_model_epoch6_num121_loss0.0140.pth with loss: 0.0140
+Epoch 6:  92%|█████████▏| 141/154 [1:29:18<08:15, 38.12s/batch, loss=0.0856]0.01188723494609197
+Model saved to ./saved/best_model_epoch6_num141_loss0.0119.pth with loss: 0.0119
+Epoch 6: 100%|██████████| 154/154 [1:37:09<00:00, 37.85s/batch, loss=0.0972]
+Epoch 7:   1%|          | 1/154 [00:45<1:56:45, 45.79s/batch, loss=0.0928]0.0928422063589096
+Epoch 7:  14%|█▎        | 21/154 [16:07<1:41:58, 46.01s/batch, loss=0.0808]0.07674984172696159
+Epoch 7:  27%|██▋       | 41/154 [31:48<1:26:22, 45.86s/batch, loss=0.0764]0.03799840880603325
+Epoch 7:  40%|███▉      | 61/154 [47:39<1:15:15, 48.55s/batch, loss=0.0726]0.02555685649152662
+Epoch 7:  53%|█████▎    | 81/154 [1:03:15<56:03, 46.08s/batch, loss=0.0813]0.01952985582160361
+Epoch 7:  66%|██████▌   | 101/154 [1:18:55<40:40, 46.04s/batch, loss=0.0882]0.015706526982312154
+Epoch 7:  79%|███████▊  | 121/154 [1:34:43<26:37, 48.40s/batch, loss=0.0783]0.01323868654483606
+Epoch 7:  92%|█████████▏| 141/154 [1:50:17<10:00, 46.18s/batch, loss=0.0701]0.010416561090354378
+Model saved to ./saved/best_model_epoch7_num141_loss0.0104.pth with loss: 0.0104
+Epoch 7: 100%|██████████| 154/154 [2:00:19<00:00, 46.88s/batch, loss=0.0759]
+Epoch 8:   1%|          | 1/154 [00:36<1:32:55, 36.44s/batch, loss=0.0666]0.06658019870519638
+Epoch 8:  14%|█▎        | 21/154 [15:29<1:39:58, 45.10s/batch, loss=0.0688]0.06411666281166531
+Epoch 8:  27%|██▋       | 41/154 [30:37<1:23:38, 44.41s/batch, loss=0.101] 0.03360304463563896
+Epoch 8:  40%|███▉      | 61/154 [45:50<1:10:08, 45.25s/batch, loss=0.0716]0.022898645552455403
+Epoch 8:  53%|█████▎    | 81/154 [1:00:59<54:47, 45.04s/batch, loss=0.0763]0.015955552274798168
+Epoch 8:  66%|██████▌   | 101/154 [1:16:05<39:17, 44.48s/batch, loss=0.0588]0.013447461668217536
+Epoch 8:  79%|███████▊  | 121/154 [1:31:14<24:44, 44.98s/batch, loss=0.0666]0.01072770061571736
+Epoch 8:  92%|█████████▏| 141/154 [1:46:21<09:45, 45.07s/batch, loss=0.0652]0.00918007974928998
+Model saved to ./saved/best_model_epoch8_num141_loss0.0092.pth with loss: 0.0092
+Epoch 8: 100%|██████████| 154/154 [1:55:46<00:00, 45.11s/batch, loss=0.083]
+Epoch 9:   1%|          | 1/154 [00:35<1:31:28, 35.87s/batch, loss=0.0535]0.05346491187810898
+Epoch 9:  14%|█▎        | 21/154 [11:12<1:06:16, 29.90s/batch, loss=0.0665]0.05709355359985715
+Epoch 9:  27%|██▋       | 41/154 [21:05<50:54, 27.03s/batch, loss=0.0511]0.028490872553935866
+Epoch 9:  40%|███▉      | 61/154 [31:28<52:56, 34.16s/batch, loss=0.0549]0.018642562273584427
+Epoch 9:  53%|█████▎    | 81/154 [41:22<36:29, 29.99s/batch, loss=0.0689]0.014373510478087414
+Epoch 9:  66%|██████▌   | 101/154 [51:12<23:41, 26.81s/batch, loss=0.0569]0.011360599742372437
+Epoch 9:  79%|███████▊  | 121/154 [1:01:39<18:58, 34.49s/batch, loss=0.064] 0.009564941364132669
+Epoch 9:  92%|█████████▏| 141/154 [1:11:34<06:30, 30.07s/batch, loss=0.0747]0.008073933396144962
+Model saved to ./saved/best_model_epoch9_num141_loss0.0081.pth with loss: 0.0081
+Epoch 9: 100%|██████████| 154/154 [1:17:49<00:00, 30.32s/batch, loss=0.0581]
+Epoch 10:   1%|          | 1/154 [00:43<1:50:15, 43.24s/batch, loss=0.0455]0.045460984110832214
+Epoch 10:  12%|█▏        | 19/154 [10:47<1:16:39, 34.07s/batch, loss=0.0463]
+Traceback (most recent call last):
+  File "D:\Desktop\linyanwei\CV-Papers-Codes\CMP\train.py", line 69, in <module>
+    loss_total += loss.item()
+                  ^^^^^^^^^^^
+KeyboardInterrupt
+
+Process finished with exit code -1073741510 (0xC000013A: interrupted by Ctrl+C)
