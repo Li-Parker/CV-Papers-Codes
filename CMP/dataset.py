@@ -85,7 +85,7 @@ def get_dataset():
 
     train_dataset = CMP_dataset(train_imgs_path, train_annos_path)
     test_dataset = CMP_dataset(test_imgs_path, test_annos_path)
-    BATCHSIZE = 16
+    BATCHSIZE = 4
     train_dataloader = data.DataLoader(train_dataset,
                                        batch_size=BATCHSIZE,
                                        shuffle=True)
